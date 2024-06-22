@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Deploying the bcakend application",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node index.js"
   },
@@ -10,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "firebase": "^10.12.2"
   }
 }
