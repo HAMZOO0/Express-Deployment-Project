@@ -9,6 +9,9 @@ const port = process.env.PORT; //  here we use virutal port for communication
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+app.get("/login", (req, res) => {
+  res.send("Login First !");
+});
 
 
 //it starts the server and begins listening for incoming HTTP requests on the specified port.
