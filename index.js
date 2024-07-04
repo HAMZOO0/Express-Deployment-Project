@@ -1,11 +1,17 @@
-import express from "express";
 
+require("dotenv").config();
+const express = require("express");
 const app = express();
-const port = 9000;
-app.use("/", (req, res) => {
-  res.json({ message: "Hello From Express App" });
+
+const port = process.env.PORT; //  here we use virutal port for communication
+
+// Handling a GET Request to the Root URL (/):
+app.get("/", (req, res) => {
+  res.send("Hello World!");
 });
 
-app.listen(9000, () => {
-  console.log(`Starting Server on Port ${port}`);
+
+//it starts the server and begins listening for incoming HTTP requests on the specified port.
+app.listen(port, () => {
+  console.log(`Example app listening on port http://localhost:${port}`);
 });

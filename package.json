@@ -1,15 +1,19 @@
 {
-  "name": "express-vercel-demo",
+  "name": "project-deploy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js","type": "module",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "Deploying the bcakend application",
+  "main": "index.js",
+  "engines": {
+    "node": "18.x"
   },
-  "author": "",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hamza",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.3"
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "firebase": "^10.12.2"
   }
 }
