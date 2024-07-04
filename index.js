@@ -1,9 +1,8 @@
 
-require("dotenv").config();
 const express = require("express");
 const app = express();
 
-const port = process.env.PORT; //  here we use virutal port for communication
+const port = 9000; //  here we use virutal port for communication
 
 // Handling a GET Request to the Root URL (/):
 app.get("/", (req, res) => {
