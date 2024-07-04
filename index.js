@@ -6,7 +6,7 @@ const port = 9000; //  here we use virutal port for communication
 
 // Handling a GET Request to the Root URL (/):
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.json({ message: "Hello From Express App" });
 });
 
 
